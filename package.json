@@ -1,0 +1,22 @@
+{
+  "name": "test-platform-getter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "express-group-routes": "^1.1.0",
+    "fs": "^0.0.1-security",
+    "scdl-api": "^1.5.0",
+    "scdl-core": "^1.1.0",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}

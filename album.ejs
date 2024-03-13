@@ -1,0 +1,11 @@
+<audio src="" controls autoplay loop></audio>
+<ul>
+    <% result.tracks.forEach(track => { %>
+        <li>
+            <%- JSON.stringify(track.title); %>
+            <button onclick="
+                document.querySelector('audio').src = `/song/<%- btoa(result.platform) %>.<%- btoa(track.permalink_url) %>`;
+            ">Play</button>
+        </li>
+    <% }) %>
+</ul>

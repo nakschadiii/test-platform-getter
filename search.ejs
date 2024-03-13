@@ -1,0 +1,12 @@
+<a href="/"></a>
+<ul>
+    <% results.forEach(function(result){ %>
+        <li>
+            <!-- <img src="<%- result.cover %>" /> -->
+            <%- result.title %>
+            <%- result.author %>
+            <%- result.platform %>
+            <a href="/album/<%- btoa(btoa(result.platform)+'.'+btoa(result.permalink_url)) %>">Link</a>
+        </li>
+    <% }); %>
+</ul>
